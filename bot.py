@@ -24,9 +24,9 @@ from datetime import datetime, timedelta
 import time
 
 # Configurações
-openai.api_key = 'sk-proj-MozJFvz94KKbgUVCSMKST3BlbkFJxzmkbj9wTqJ4uknSZCfd'
-weather_api_key = 'bf3fd5205794430d12d8e8e2df848c15'
-news_api_key = '68e70c1f8fee41da890b52c425e19ca4'
+openai.api_key = 'API'
+weather_api_key = 'API'
+news_api_key = 'API'
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587 
 smtp_username = ' Your gmail'
@@ -94,7 +94,7 @@ def send_whatsapp_message(number, message):
 
 # Função para obter informações meteorológicas de Curitiba
 def get_weather():
-    city = 'Curitiba,BR'
+    city = 'YOUR CITY'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={weather_api_key}&units=metric&lang=pt'
     response = requests.get(url)
     data = response.json()
